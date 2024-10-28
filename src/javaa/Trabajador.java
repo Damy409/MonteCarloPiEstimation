@@ -1,3 +1,4 @@
+package javaa;
 import java.util.Random;
 
 /**
@@ -20,14 +21,14 @@ public class Trabajador {
      * @return numero de puntos que caen dentro del circulo de radio 1
      */
     public int generarPuntos(int N) {
-        int dentroDelCirculo = 0;
+        int dentroCirculo = 0;
         for (int i = 0; i < N; i++) {
             double x = random.nextDouble() * 2 - 1; // Generar punto en [-1, 1]
             double y = random.nextDouble() * 2 - 1;
             if (x * x + y * y <= 1) {
-                dentroDelCirculo++;
+                dentroCirculo++;
             }
         }
-        return dentroDelCirculo;
+        return dentroCirculo;
     }
 }

@@ -1,3 +1,4 @@
+package javaa;
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,6 +28,6 @@ public class Cliente {
         int N = 100000; // Numero de Puntos
         //Peticion para estimar Pi
         double estimacionPi = maestro.estimarPi(N);
-        System.out.println("Estimación de Pi: " + estimacionPi); //Resultado 
+        System.out.println("Estimación de Pi: " + estimacionPi); // Resultado
     }
 }
